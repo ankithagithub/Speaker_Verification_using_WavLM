@@ -4,11 +4,11 @@ This repository contains code to train a **WavLM-Large** model for **speaker rec
 
 ---
 
-├── train.py                # Main training script  
-├── test.py                 # Script for testing and evaluation (EER computation)  
-├── VoxCelebDataset         # Custom PyTorch dataset class  
-├── wavlm_voxceleb_model/   # Saved fine-tuned model  
-└── README.md               # You're here!
+├── train.py                
+├── test.py                 
+├── VoxCelebDataset         
+├── wavlm_voxceleb_model/   
+└── README.md              
 
 ---
 
