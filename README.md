@@ -78,20 +78,27 @@ Modify test.py if needed for speaker verification tasks
 📊 Results
 Model	Dataset	EER (%)
 WavLM-Large	VoxCeleb1	4.60
-📌 Training Details
+
+🧠 Model Details
 Model: WavLM-Large
 
-Task: Speaker Classification
-
-Loss: CrossEntropyLoss
-
-Optimizer: AdamW (lr=5e-5)
+Loss: CrossEntropyLoss (speaker classification)
 
 Batch Size: 4
 
+Gradient Accumulation: 4 steps
+
+Optimizer: AdamW (lr=5e-5)
+
 Epochs: 20
 
-Precision: AMP (mixed precision)
+Mixed Precision: Enabled via torch.cuda.amp
 
-📬 Contact
-For questions or improvements, feel free to create an issue or reach out!
+🧠 Future Work
+Replace classification head with AM-Softmax or Cosine Similarity loss for better EER
+
+Add evaluation script with scoring backend (e.g., cosine scoring or PLDA)
+
+Fine-tune on other datasets (e.g., I-MSV, VoxCeleb2)
+
+Explore domain adaptation for cross-lingual speaker recognition
