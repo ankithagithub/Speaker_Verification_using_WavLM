@@ -28,15 +28,23 @@ pip install torch torchaudio --index-url https://download.pytorch.org/whl/cu118
 # Install HuggingFace Transformers and utilities
 pip install transformers datasets tqdm
 ```
+💡 Make sure CUDA is properly installed if training on GPU.
 
 🎧 Dataset: VoxCeleb1
 Download the VoxCeleb1 development set from here and organize it like this:
 
 ```bash
-/path/to/vox1_dev_wav/wav/
-└── speaker_id/
-    └── session_id/
-        └── audio.wav
+wavlm-voxceleb/
+├── VoxCeleb1/
+│   └── vox1_dev_wav/
+│       └── wav/
+│           ├── id10001/
+│           │   ├── 1zcIwhmdeo4/
+│           │   │   ├── 00001.wav
+│           │   │   └── ...
+│           │   └── ...
+│           └── ...
+
 ```
 Update this line in train.py:
 
