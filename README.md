@@ -4,6 +4,7 @@ This repository contains code to train a **WavLM-Large** model for **speaker rec
 
 ---
 
+## 📁 Project Structure
 ├── train.py                
 ├── test.py                 
 ├── VoxCelebDataset         
