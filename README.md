@@ -31,7 +31,13 @@ pip install transformers datasets tqdm
 💡 Make sure CUDA is properly installed if training on GPU.
 
 🎧 Dataset: VoxCeleb1
-Download the VoxCeleb1 development set from here and organize it like this:
+
+To download the VoxCeleb1 dataset, follow these steps:
+
+```markdown
+[VoxCeleb1 Dataset Download Request](http://www.robots.ox.ac.uk/~vgg/data/voxceleb/)
+```
+After gaining access, you can download the development set and organize the data in the following way:
 
 ```bash
 wavlm-voxceleb/
